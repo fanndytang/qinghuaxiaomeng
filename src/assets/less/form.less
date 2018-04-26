@@ -1,0 +1,91 @@
+/** 表单 */
+.form-item, .tab-form .el-form-item {
+  line-height: 26px;
+  .label-tip {
+    position: absolute;
+    right: 0;
+    top: 17px;
+    font-size: 12px;
+    color: #aaa;
+    line-height: 16px;
+    padding-right: 10px;
+    margin-top: 5px;
+  }
+  .el-form-item__content .label-tip {
+    left: 0;
+    width: 120px;
+    text-align: right;
+  }
+  .form-item {
+    margin-bottom: 0 !important;
+  }
+  > label {
+    display: inline-block;
+    font-size: 14px;
+    color: #606266;
+    text-align: right;
+    padding: 0 10px;
+    font-weight: normal;
+    position: relative;
+    white-space: nowrap;
+    height: 26px;
+  }
+  input[type=text] {
+    height: 26px;
+    padding: 0 5px;
+  }
+  textarea {
+    padding: 5px;
+  }
+  input[type=text], textarea {
+    border-radius: 3px;
+    border: 1px solid #dcdfe6;
+    &:focus {
+      outline: none;
+      border: 1px solid #20a0ff;
+    }
+  }
+  .el-radio {
+    line-height: 30px;
+  }
+}
+.btn {
+  border: 1px solid #dcdfe6;
+  background: transparent;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  color: #333;
+  &:focus {
+    outline: none;
+  }
+  &.btn-sm {
+    font-size: 12px;
+    padding: 3px 6px;
+  }
+  &.btn-primary {
+    background: #20a0ff;
+    border-color: #20a0ff;
+    color: #fff;
+    &:hover {
+      background: #53b6ff;
+      border-color: #53b6ff;
+    }
+  }
+  &.btn-text {
+    background: transparent;
+    border: none;
+    color: #20a0ff;
+    &:hover {
+      color: #53b6ff;
+    }
+  }
+}
+
+
+
+.form {
+  margin-bottom: 30px;
+  padding: 30px;
+}

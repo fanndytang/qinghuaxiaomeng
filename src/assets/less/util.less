@@ -1,0 +1,51 @@
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+[class*=el-icon-] {
+  cursor: pointer;
+}
+body {
+  padding: 40px 0 0 0;
+  margin: 0;
+  display: flex;
+  font-size: 14px;
+  color: #2c3e50;
+  background-color: #ecf0f5;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+.clearfix {
+  &:after {
+    display: table;
+    clear: both;
+    content: '';
+  }
+}
+
+::-webkit-scrollbar {     //滚动条整体部分
+  width: 4px;
+  height: 4px;
+  background-color: transparent;
+}
+::-webkit-scrollbar-track {  // scroll轨道背景
+ // background-color: #b5b1b1;
+  background-color: hsla(220,4%,58%,.1);
+}
+::-webkit-scrollbar-thumb {  // 滚动条中能上下移动的小块
+  border-radius: 10px;
+  background-color: hsla(220,4%,58%,.3);
+}
+
+a {
+  text-decoration: none;
+  color: #20a0ff;
+}
+
+[v-cloak]{
+  display: none;
+}
